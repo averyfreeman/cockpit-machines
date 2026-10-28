@@ -4,7 +4,7 @@
  * Copyright (C) 2025 Red Hat, Inc.
  */
 
-import React from 'react';
+
 import cockpit from 'cockpit';
 
 import type { VM, VMGraphics } from '../../../types';

@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2023 Red Hat, Inc.
  */
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import cockpit from 'cockpit';
 
 import type { ConnectionName, VM } from '../../../types';

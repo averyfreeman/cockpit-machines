@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2018 Red Hat, Inc.
  */
-import React from 'react';
+
 
 import type { StoragePool } from '../../types';
 

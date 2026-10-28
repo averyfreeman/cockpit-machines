@@ -5,7 +5,7 @@
  */
 
 import cockpit from "cockpit";
-import React, { useState, useId } from 'react';
+import { useState, useId } from 'react';
 
 import { Button } from "@patternfly/react-core/dist/esm/components/Button";
 import { TextInput } from "@patternfly/react-core/dist/esm/components/TextInput";

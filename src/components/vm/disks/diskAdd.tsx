@@ -6,7 +6,7 @@
 
 import type { VM, VMDisk, VMDiskDevice, StoragePool, StorageVolume } from '../../../types';
 
-import React from 'react';
+
 import { Bullseye } from "@patternfly/react-core/dist/esm/layouts/Bullseye";
 import { ExpandableSection } from "@patternfly/react-core/dist/esm/components/ExpandableSection";
 import { Form } from "@patternfly/react-core/dist/esm/components/Form";

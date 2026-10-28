@@ -39,7 +39,7 @@ interface DeleteResourceModalState {
 
 export class DeleteResourceModal extends React.Component<DeleteResourceModalProps, DeleteResourceModalState> {
     static contextType = DialogsContext;
-    context!: Dialogs;
+    declare context: Dialogs;
 
     constructor(props: DeleteResourceModalProps) {
         super(props);

@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2025 Red Hat, Inc.
  */
-import React from 'react';
+
 import cockpit from 'cockpit';
 
 import { Button } from "@patternfly/react-core/dist/esm/components/Button";

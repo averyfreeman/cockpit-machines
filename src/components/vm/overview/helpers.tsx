@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2020 Red Hat, Inc.
  */
-import React from 'react';
+
 import cockpit from 'cockpit';
 
 import type { optString, DomainLoaderCapabilities } from '../../../types';

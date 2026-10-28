@@ -4,7 +4,7 @@
  * Copyright (C) 2019 Red Hat, Inc.
  */
 
-import React from 'react';
+
 import cockpit from 'cockpit';
 
 import type { VM, VMDisk } from '../../../types';

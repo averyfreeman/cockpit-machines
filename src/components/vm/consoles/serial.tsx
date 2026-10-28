@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2017 Red Hat, Inc.
  */
-import React, { useState } from 'react';
+import { useState } from 'react';
 import cockpit from 'cockpit';
 
 import type { optString, VM } from '../../../types';

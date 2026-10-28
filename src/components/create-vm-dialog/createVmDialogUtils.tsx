@@ -5,7 +5,7 @@
  */
 
 import cockpit from 'cockpit';
-import React from 'react';
+
 
 import type { OSInfo } from '../../types';
 

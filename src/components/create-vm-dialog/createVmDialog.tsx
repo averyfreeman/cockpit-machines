@@ -109,8 +109,7 @@ export const CreateVmModal = ({
             try {
                 if (connectionName == "system" || appState.loggedUser?.id != 0)
                     await storagePoolGetAll({ connectionName });
-            // eslint-disable-next-line @typescript-eslint/no-unused-vars
-            } catch (ex) {
+            } catch {
                 // Error has been logged by storagePoolGetAll and been
                 // re-thrown.  We don't want any error here from
                 // stopping the dialog from opening.

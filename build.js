@@ -41,10 +41,8 @@ const outdir = 'dist';
 const packageJson = JSON.parse(fs.readFileSync('package.json'));
 
 const parser = (await import('argparse')).default.ArgumentParser();
-/* eslint-disable max-len */
 parser.add_argument('-r', '--rsync', { help: "rsync bundles to ssh target after build", metavar: "HOST" });
 parser.add_argument('-w', '--watch', { action: 'store_true', help: "Enable watch mode", default: process.env.ESBUILD_WATCH === "true" });
-/* eslint-enable max-len */
 const args = parser.parse_args();
 
 if (args.rsync)
@@ -96,11 +94,14 @@ function watch_dirs(dir, on_change) {
 const context = await esbuild.context({
     ...!production ? { sourcemap: "linked" } : {},
     bundle: true,
+    jsx: "automatic",
     entryPoints: ['./src/index.js'],
     // Allow external font files which live in ../../static/fonts
     external: ['*.woff', '*.woff2', '*.jpg', '*.svg', '../../assets*'],
     // Move all legal comments to a .LEGAL.txt file
     legalComments: 'external',
+    format: 'esm',
+    splitting: true,
     loader: {
         ".js": "jsx",
         ".py": "text",
@@ -110,7 +111,7 @@ const context = await esbuild.context({
     nodePaths,
     outdir,
     metafile: true,
-    target: ['es2020'],
+    target: ['es2022'],
     plugins: [
         cleanPlugin(),
         // Esbuild will only copy assets that are explicitly imported and used in the code.

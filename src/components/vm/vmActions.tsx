@@ -4,7 +4,7 @@
  * Copyright (C) 2016 Red Hat, Inc.
  */
 import cockpit from 'cockpit';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import type { ConnectionName, VM, VMState } from '../../types';
 

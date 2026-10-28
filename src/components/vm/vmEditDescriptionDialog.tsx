@@ -5,7 +5,7 @@
  */
 
 import cockpit from 'cockpit';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import type { VM } from '../../types';
 

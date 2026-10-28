@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2019 Red Hat, Inc.
  */
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import type { Network, NetworkDhcpHost, NetworkIp } from '../../types';
 

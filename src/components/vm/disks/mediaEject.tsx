@@ -4,7 +4,7 @@
  * Copyright (C) 2022 Red Hat, Inc.
  */
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import type { VM, VMDisk } from '../../../types';
 
